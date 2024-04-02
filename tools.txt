@@ -1,0 +1,3 @@
+color: #695aa6;
+background-color: rgb(255, 255, 255);
+background: #695aa6;
