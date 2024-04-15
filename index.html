@@ -1,476 +1,220 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap" rel="stylesheet">
-<link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>My Portfolio</title>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-  <nav class="navbar navbar-expand-lg bg-transparent" >
-    <div class="container-fluid px-0 mx-5">
-      <a class="navbar-brand " href="#">MEYAWO</a>
-      <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body class="m-0 p-0">
+  <nav class="navbar navbar-dark bg-dark fixed-top rounded-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Dr. Sense</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse bg-light px-4 pb-3" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-3s my-1">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Testimonial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
-          </li>
-        </ul>
-        <button type="button" class="btn btn-primary">Components</button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Where to next?</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body mx-3">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mx-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <button class="btn btn-success mt-2" type="submit">Ask me anything!</button>
+        </div>
       </div>
     </div>
   </nav>
-  <header class="header" id="header">
-    <div class="overlay"></div>
-    <div class="head-content container">
-    <h1 class="header-title">
-      <span class="up">HI!</span><br>
-      <span class="down">I am John Doe</span>
-    </h1>
-    <p class="header-subtitle">FRONTEND WEB DESIGNER</p>
-    <button type="button" class="btn btn-primary">Visit My work</button>
-  </div>
-  </header>
-  <section class="section pt-0"  id="about">
-    <div class="container text-center">
-      <div class="about">
-        <div class="about-img-holder">
-          <img src="me.jpeg" class="about-img " alt="">
-        </div>
-        <div class="about-caption">
-          <p class="section-subtitle">Who am I ?</p>
-          <h2 class="section-title mb-3">About Me</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iusto corrupti vero recusandae dolorem omnis, iste libero quaerat maiores qui aperiam nisi dolores! Provident neque delectus dignissimos, expedita blanditiis in.
-          Ab, accusamus quasi tempore ad quidem minima nobis blanditiis optio omnis dolor amet facere, maxime neque obcaecati natus? Alias repudiandae ea placeat quo ab est dolores vitae accusamus nostrum sequi!</p>
-          <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section" id="sevice">
-    <div class="container text-center p-3">
-      <p class="section-subtitle">What I Do ?</p>
-      <h6 class="section-title mb-6 ">Service</h6>
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="service-card">
-            <div class="body">
-              <img src="https://picsum.photos/50/30" class="icon" alt="">
-              <h6 class="subtitle">adipisicing</h6>
-              <p class="sutitle">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere a eligendi laborum quas? Culpa autem tenetur pariatur.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="service-card">
-            <div class="body">
-              <img src="https://picsum.photos/50/30" class="icon" alt="">
-              <h6 class="subtitle">adipisicing</h6>
-              <p class="sutitle">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere a eligendi laborum quas? Culpa autem tenetur pariatur.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="service-card">
-            <div class="body">
-              <img src="https://picsum.photos/50/30" class="icon" alt="">
-              <h6 class="subtitle">adipisicing</h6>
-              <p class="sutitle">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere a eligendi laborum quas? Culpa autem tenetur pariatur.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="service-card">
-            <div class="body">
-              <img src="https://picsum.photos/50/30" class="icon" alt="">
-              <h6 class="subtitle">adipisicing</h6>
-              <p class="sutitle">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere a eligendi laborum quas? Culpa autem tenetur pariatur.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section" id="portfolio">
-    <div class="container text-center">
-      <p class="section-subtitle">What I Did ?</p>
-      <h6 class="section-title mb-6">Portfolio</h6>
-      <div class="row">
-        <div class="col-md-4">
-          <a href="#" class="portfolio-card">
-            <img src="prtflio2.jpg" alt="" class="portfolio-card-img">
-            <span class="portfolio-card-overlay">
-              <span class="portfolio-card-caption">
-                <h4>Web Designing</h4>
-                <p class="font-weight-normal">
-                  Category: Web Templates
-                </p>
-              </span>
-            </span>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="#" class="portfolio-card">
-            <img src="prtflio1.jpg" alt="" class="portfolio-card-img">
-            <span class="portfolio-card-overlay">
-              <span class="portfolio-card-caption">
-                <h4>Web Designing</h4>
-                <p class="font-weight-normal">
-                  Category: Web Templates
-                </p>
-              </span>
-            </span>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="#" class="portfolio-card">
-            <img src="prtflio2.jpg" alt="" class="portfolio-card-img">
-            <span class="portfolio-card-overlay">
-              <span class="portfolio-card-caption">
-                <h4>Web Designing</h4>
-                <p class="font-weight-normal">
-                  Category: Web Templates
-                </p>
-              </span>
-            </span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section" id="pricing">
-    <div class="container text-center">
-      <p class="section-subtitle">How Much I Charge ?</p>
-      <h6 class="section-title mb-6">My Pricing</h6>
-      <div class="pricing-wrapper">
-        <div class="pricing-card">
-          <div class="pricing-card-header">
-            <i class="fa fa-motorcycle fs-1" aria-hidden="true"></i>
 
-          </div>
-          <div class="pricing-card-body">
-            <h6 class="pricing-card-title">Free</h6>
-              <div class="pricing-card-list">
-                <p>accusamus reprehenderit</p>
-                <p>provident dolorem</p>
-                <p>quos neque</p>
-                <p>fugiat quibusdam</p>
-                <p>
-                  <i class="ti-close">
-                    ::before
-                  </i>
-                </p>
-                <p>
-                  <i class="ti-close">
-                    ::before
-                  </i>
-                </p>
-                
-              </div>
-          </div>
-          <div class="pricing-card-footer">
-            <span>$</span>
-            <span>0.00/Month</span>
-          </div>
-          <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+  <header class="header text-center text-bg-secondary pb-2 rounded-bottom mb-5">
+    <div class="intro mt-5 pt-3 mh-">
+      <div class="profile">
+        <img src="image.png" alt="my face" class="profile-photo rounded mt-2" style="width: 35%;">
+      </div>
+      <div class="profile-name pt-3">
+        <h2 class="name">
+          I am Ayirwanda Adolphe
+        </h2>
+        <p class="title pb-1">FRONTEND WEB DEVELOPER</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="about-me container text-center">
+    <div class="container-sm text-center">
+      <div class="row justify-content-center">
+        <div class="col-4" style="max-height: 30px;">
+          <span class="about-me-tag w-10 fs-1  align-item-center">About Me 👉🏾</spa>
         </div>
-        <div class="pricing-card">
-          <div class="pricing-card-header">
-            <img src="https://picsum.photos/50/50" alt="" class="pricing-card-icon">
-          </div>
-          <div class="pricing-card-body">
-            <h6 class="pricing-card-title">Free</h6>
-              <div class="pricing-card-list">
-                <p>accusamus reprehenderit</p>
-                <p>provident dolorem</p>
-                <p>quos neque</p>
-                <p>fugiat quibusdam</p>
-                <p>
-                  <i class="ti-close">
-                    ::before
-                  </i>
-                </p>
-                <p>
-                  <i class="ti-close">
-                    ::before
-                  </i>
-                </p>
-                
-              </div>
-          </div>
-          <div class="pricing-card-footer">
-            <span>$</span>
-            <span>0.00/Month</span>
-          </div>
-          <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+        <div class="col-8">
+          <p class="mx-5">👋🏾 Hey there! I'm Adolphe, a front-end developer dedicated to crafting captivating websites that marry form with function. I thrive on the creative process of transforming ideas into engaging digital experiences. With a keen eye for design and a knack for coding, I specialize in building intuitive interfaces that delight users. Let's collaborate and turn your vision into reality!</p>
         </div>
-        <div class="pricing-card">
-          <div class="pricing-card-header">
-            <img src="https://picsum.photos/50/50" alt="" class="pricing-card-icon">
-          </div>
-          <div class="pricing-card-body">
-            <h6 class="pricing-card-title">Free</h6>
-              <div class="pricing-card-list">
-                <p>accusamus reprehenderit</p>
-                <p>provident dolorem</p>
-                <p>quos neque</p>
-                <p>fugiat quibusdam</p>
-                <p>
-                  <i class="ti-close">
-                    ::before
-                  </i>
-                </p>
-                <p>
-                  <i class="ti-close">
-                    ::before
-                  </i>
-                </p>
-                
-              </div>
-          </div>
-          <div class="pricing-card-footer">
-            <span>$</span>
-            <span>0.00/Month</span>
-          </div>
-          <a href="#" class="btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+      </div>
+    </div>
+    <div class="container mb-5">
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <button class="about-me-cv btn rounded rounded-5 mt-3 btn-secondary">Download my CV</button>
         </div>
       </div>
     </div>
   </section>
-  <section class="section-sm bg-primary">
-    <div class="container text-center text-sm-left">
-      <div class="row align-items-center">
-        <div class="col-sm offset-md-1 mb-4 mb-md-0">
-          <h6 class="title text-light">Want to work with me?</h6>
-          <p class="m-0 text-light">Always feel free to Contact & Hire</p>
+
+  <section id="service">
+    <div class="service-card-title text-center mt-5 mb-5">
+      <h5>What I do?</h5>
+      <h2 class="fw-bold">My Services</h2>
+    </div>
+    <div class="container mb-5">
+      <div class="row service-cards">
+        <div class="col-lg-3 col-md-5 mx-md-3 border border-rounded">
+          <span class="icon">
+            <i class="fa fa-television fs-1 " aria-hidden="true"></i>
+          </span>
+          <h4 class="service-name">Website Development</h4>
+          <p class="describe">Designing and building visually appealing and interactive websites using HTML, CSS, and JavaScript
+          </p>
         </div>
-        <div class="col-sm offset-sm-2 offset-md-3">
-          <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
+        <div class="col-lg-3 col-md-5 border border-rounded">
+          <span class="icon">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+          </span>
+          <h4 class="service-name">Responsive Design</h4>
+          <p class="describe">Creating websites that adapt and display correctly on various devices and screen sizes, ensuring a seamless user experience across desktops, tablets, and smartphones.
+          </p>
         </div>
+        <div class="col-lg-3 col-md-5 mx-md-3 border border-rounded">
+          <span class="icon">
+            <i class="fa fa-picture-o" aria-hidden="true"></i>
+          </span>
+          <h4 class="service-name">User Interface (UI) Design</h4>
+          <p class="describe">Crafting intuitive and aesthetically pleasing user interfaces that effectively communicate brand identity and message, while prioritizing usability and accessibility.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-5 border border-rounded">
+          <span class="icon">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+          </span>
+          <h4 class="service-name">Single Page Applications (SPAs)</h4>
+          <p class="describe">Building SPAs using frameworks like React.js, AngularJS, or Vue.js to deliver dynamic and highly interactive user experiences without the need for page reloading.
+          </p>
+        </div>
+      </div>
       </div>
     </div>
   </section>
-  <section class="section" id="testimonial">
-    <div class="container text-center">
-      <p class="section-subtitle">What Client Think About Me ?</p>
-      <h6 class="section-title mb-6">Testimonials</h6>
+
+  <section id="portfolio">
+    <div class="portfolio-title text-center pt-4">
+      <p>What I did?</p>
+      <h3>Portfolio</h3>
+    </div>
+    <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <div class="testimonial-card">
-            <div class="testimonial-card-img-holder">
-              <img src="https://picsum.photos/10/10" alt="" class="testimonial-card-img">
-            </div>
-            <div class="testimonial-card-body">
-              <p class="testimonial-card-subtitle">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus laboriosam consectetur labore dolore eius harum, porro, molestias suscipit iste veniam ipsam animi asperiores saepe omnis error pariatur quam mollitia recusandae.
-              </p>
-              <h6 class="testimonial-card-title">Emily Reb</h6>
-            </div>
-          </div>
+        <div class="col-md-3 col-sm-5 m-4">
+          <h4 class="title">Web Designing</h4>
+          <p class="subtitle">Category: Web templates</p>
         </div>
-        <div class="col-md-6">
-          <div class="testimonial-card">
-            <div class="testimonial-card-img-holder">
-              <img src="https://picsum.photos/10/10" alt="" class="testimonial-card-img">
-            </div>
-            <div class="testimonial-card-body">
-              <p class="testimonial-card-subtitle">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus laboriosam consectetur labore dolore eius harum, porro, molestias suscipit iste veniam ipsam animi asperiores saepe omnis error pariatur quam mollitia recusandae.
-              </p>
-              <h6 class="testimonial-card-title">Emily Reb</h6>
-            </div>
-          </div>
+        <div class="col-md-3 col-sm-5 m-4">
+          <h4 class="title">Machine Learning</h4>
+          <p class="subtitle">Category: Ai</p>
+        </div>
+        <div class="col-md-3 col-sm-5 m-4">
+          <h4 class="title">Personal Tutor</h4>
+          <p class="subtitle">Category: Empowering</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="section" id="blog">
-    <div class="container text-center">
-      <p class="section-subtitle">Recent Posts</p>
-      <h6 class="section-title mb-6">Blog</h6>
-    </div>
-    <div class="blog-card">
-      <div class="blog-card-header">
-        <img src="https://picsum.photos/100/300" alt="" class="blog-card-img">
-      </div>
-      <div class="blog-card-body">
-        <h5 class="blog-card-title">Consectetur adipisicinng elit</h5>
-        <p class="blog-card-caption">
-          <a href="#">By: Admin</a>
-          <a href="#">
-            <i class="ti-heart text-danger">
-              ::before
-            </i>
-            " 234"
-          </a>
-          <a href="#">
-            <i class="ti-comment">
-              ::before
-            </i>
-            " 123"
-          </a>
-        </p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus eveniet deserunt accusamus sit beatae voluptatem provident, eaque eum ipsam molestiae vero fugit a, culpa blanditiis, voluptas qui reprehenderit corporis!</p>
-        <p>
-          <b>
-            accusamus sit beatae voluptatem provident, eaque eum ipsam molestiae vero fugit a, culpa blanditiis, voluptas qui reprehenderit corporis
-          </b>
-        </p>
-        <p>
-          <b>
-            accusamus sit beatae voluptatem provident, eaque eum ipsam molestiae vero fugit a, culpa blanditiis.
-          </b>
-        </p>
-        <a href="#" class="blog-card-link">
-          "Read  More"
-          <i class="ti-angle-double-right">
-            ::before
-          </i>
-        </a>
-      </div>
-    </div>
-    <div class="blog-card">
-      <div class="blog-card-header">
-        <img src="https://picsum.photos/100/300" alt="" class="blog-card-img">
-      </div>
-      <div class="blog-card-body">
-        <h5 class="blog-card-title">Consectetur adipisicinng elit</h5>
-        <p class="blog-card-caption">
-          <a href="#">By: Admin</a>
-          <a href="#">
-            <i class="ti-heart text-danger">
-              ::before
-            </i>
-            " 234"
-          </a>
-          <a href="#">
-            <i class="ti-comment">
-              ::before
-            </i>
-            " 123"
-          </a>
-        </p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus eveniet deserunt accusamus sit beatae voluptatem provident, eaque eum ipsam molestiae vero fugit a, culpa blanditiis, voluptas qui reprehenderit corporis!</p>
-        <p>
-          <b>
-            accusamus sit beatae voluptatem provident, eaque eum ipsam molestiae vero fugit a, culpa blanditiis, voluptas qui reprehenderit corporis
-          </b>
-        </p>
-        <p>
-          <b>
-            accusamus sit beatae voluptatem provident, eaque eum ipsam molestiae vero fugit a, culpa blanditiis.
-          </b>
-        </p>
-        <a href="#" class="blog-card-link">
-          "Read  More"
-          <i class="ti-angle-double-right">
-            ::before
-          </i>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="section" id="contact">
-    <div class="container text-center">
-      <p class="section-subtitle">How can you communicate ?</p>
-      <h6 class="section-title mb-5">Contact Me</h6>
-      <form action class="contact-form col-md-10 col-lg-8 m-auto">
-        <div class="form-row">
-          <div class="form-group col-sm-6">
-            <imput type="text" size="50" placeholder="Your Name" class="form-control" required>
-          </div>
-          <div class="form-group col-sm-6">
-            <input type="email" class="form-control" placeholder="Enter Email">
-          </div>
-          <div class="form-group col-sm-12">
-            <textarea name="comment" id="comment" rows="6" class="form-control" placeholder="Write Something"></textarea>
-          </div>
-          <div class="form-group col-sm-12 mt-3">
-            <input type="button" value="Send Message" class="btn btn-outline-primary rounded">
-          </div>
+
+  <section id="Hire-me">
+    <div class="container-fluid text-bg-secondary rounded-bottom mt-3 mb-5 pt-3">
+      <div class="row text-center p-4">
+        <div class="col-md-4 col-sm-6">
+          <h4 class="contact-me-title">want to work with me?</h4>
+          <p class="contact-me-subtitle">Always feel free to Contact & Hire me</p>
         </div>
-      </form>
+        <div class="col-md-4 col-sm-6">
+          <button class="hire border-rounded rounded-2 border-0 px-5 py-2">Hire Me</button>
+        </div>
+      </div>
     </div>
   </section>
-  <div class="container">
-    <footer class="footet">
-      <p class="mb-0">
-        "Copyright "
-        <script>document.write(new Date().getFullYear())</script>
-        "2024 ©"
-        <a href="#">DevCRUD</a>
-        " Distribution "
-        <a href="#">ThemeWagon</a>
-      </p>
-      <div class="social-links text-right m-auto ml-sm-auto">
-        <a href="#" class="link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-          </svg>
-        </a>
-        <a href="#" class="link">
-          <i class="ti-twitter-alt">
-            ::before
-          </i>
-        </a>
-        <a href="#" class="link">
-          <i class="ti-google">
-            ::before
-          </i>
-        </a>
-        <a href="#" class="link">
-          <i class="ti-pinterest-alt">
-            ::before
-          </i>
-        </a>
-        <a href="#" class="link">
-          <i class="ti-instagram">
-            ::before
-          </i>
-        </a>
-        <a href="#" class="link">
-          <i class="ti-rss">
-            ::before
-          </i>
-        </a>
+
+  <section id="testimonial">
+    <div class="intro text-center mb-4 pb-2">
+      <p class="title">What Clients Think about Me?</p>
+      <h4>Testimonial</h4>
+    </div>
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-lg-5 col-md-10 col-sm-10 border border-rounded rounded-3 m-2 p-4">
+          <p class="position-relative">
+            Working with Adolphe was a breeze. Their attention to detail and dedication to crafting a seamless user experience truly impressed us. We couldn't be happier with the result!
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded">
+              <img src="mike.jpg" alt="" style="width: 75px;">
+            </span>
+          </p>
+        </div>
+        <div class="col-lg-5 col-md-10 col-sm-10 border border-rounded rounded-3 m-2 p-4">
+          <p class="position-relative">
+            Exceptional talent and professionalism! Adolphe transformed our website into a modern, responsive masterpiece. Their communication and expertise made the entire process smooth and enjoyable. Highly recommended!
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded">
+              <img src="terry.jpg" alt="" style="width: 75px;">
+            </span>
+          </p>
+        </div>
       </div>
-    </footer>
-  </div>
-  <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+    </div>
+  </section>
+  <section class="contact-me text-center">
+    <p class="title">How can you communicate?</p>
+    <h4 class="subtitle">Contact Me</h4>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="mb-3 col-md-6 col-sm-6">
+          <input type="text" class="form-control form-control-sm" placeholder="Your Name">
+        </div>
+        <div class="mb-3 col-md-6 col-sm-6">
+          <input type="email" class="form-control form-control-sm" placeholder="Enter Email">
+        </div>
+        <div class="mb-3 col-12">
+          <textarea class="form-control form-control-lg" rows="4" cols="8"></textarea>
+        </div>
+        <div class="col-auto text-center">
+          <button type="submit" class="btn rounded mb-3 text-bg-secondary p-1  rounded-bottom">Send Message!</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="text-center mt-2">
+    <span class="border border-top"></span>
+    <p>
+      Copyright <script>document.write(/\d{4}/.exec(Date())[0])</script> Ayirwanda Adolphe
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
