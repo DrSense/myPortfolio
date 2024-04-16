@@ -5,52 +5,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <title>My Portfolio</title>
+  <script src="https://kit.fontawesome.com/fa052390b8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Adolphe's Portfolio</title>
 </head>
 <body class="m-0 p-0">
   <nav class="navbar navbar-dark bg-dark fixed-top rounded-bottom">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Dr. Sense</a>
+      <a class="navbar-brand fs-2" href="#">Dr. Sense</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Where to next?</h5>
+          <h5 class="offcanvas-title fs-3 p-2" id="offcanvasDarkNavbarLabel">Where to next?</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body mx-3">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mx-2">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mx-3">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about-me">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonial</a>
+              <a class="nav-link" href="#testimonial">Testimonial</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#service">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#footer">Social Media</a>
             </li>
           </ul>
-          <button class="btn btn-success mt-2" type="submit">Ask me anything!</button>
+          <a href="#contact-me">
+            <button class="btn btn-success mt-2" type="submit">Ask me anything!</button>
+          </a>
         </div>
       </div>
     </div>
   </nav>
 
-  <header class="header text-center text-bg-secondary pb-2 rounded-bottom mb-5">
-    <div class="intro mt-5 pt-3 mh-">
+  <header class="header text-center text-bg-secondary pb-2 rounded-bottom mb-5 mt-5" id="home">
+    <div class="intro mt-5 pt-3">
       <div class="profile">
-        <img src="image.png" alt="my face" class="profile-photo rounded mt-2" style="width: 35%;">
+        <img src="image.png" alt="my face" class="profile-photo rounded mt-5" style="width: 25%;">
       </div>
       <div class="profile-name pt-3">
         <h2 class="name">
@@ -61,18 +64,21 @@
     </div>
   </header>
 
-  <section id="about-me container text-center">
-    <div class="container-sm text-center">
+  <section id="about-me">
+    <div class="container text-center">
       <div class="row justify-content-center">
         <div class="col-4" style="max-height: 30px;">
-          <span class="about-me-tag w-10 fs-1  align-item-center">About Me 👉🏾</spa>
+          <span class="about-me-tag nw-10 fs-2 d-inline-block ">
+            About Me
+            <i class="far fa-arrow-alt-circle-right"></i>
+          </spa>
         </div>
         <div class="col-8">
-          <p class="mx-5">👋🏾 Hey there! I'm Adolphe, a front-end developer dedicated to crafting captivating websites that marry form with function. I thrive on the creative process of transforming ideas into engaging digital experiences. With a keen eye for design and a knack for coding, I specialize in building intuitive interfaces that delight users. Let's collaborate and turn your vision into reality!</p>
+          <p>👋🏾 Hey there! I'm Adolphe, I am front-end developer dedicated to crafting captivating websites that varies with function. I thrive on the creative process of transforming ideas into engaging digital experiences. With a keen eye for design and a knack for coding, I specialize in building intuitive interfaces that delight users. Let's collaborate and turn your vision into reality!</p>
         </div>
       </div>
     </div>
-    <div class="container mb-5">
+    <div class="container mb-5 mt-2">
       <div class="row justify-content-center">
         <div class="col-4">
           <button class="about-me-cv btn rounded rounded-5 mt-3 btn-secondary">Download my CV</button>
@@ -83,20 +89,20 @@
 
   <section id="service">
     <div class="service-card-title text-center mt-5 mb-5">
-      <h5>What I do?</h5>
+      <p>What I do?</p>
       <h2 class="fw-bold">My Services</h2>
     </div>
     <div class="container mb-5">
-      <div class="row service-cards">
-        <div class="col-lg-3 col-md-5 m-2 border border-rounded">
+      <div class="row">
+        <div class="col-lg-3 col-md-5 border border-rounded service-card">
           <span class="icon">
-            <i class="fa fa-television fs-1 " aria-hidden="true"></i>
+            <i class="fa fa-television" aria-hidden="true"></i>
           </span>
           <h4 class="service-name">Website Development</h4>
           <p class="describe">Designing and building visually appealing and interactive websites using HTML, CSS, and JavaScript
           </p>
         </div>
-        <div class="col-lg-3 col-md-5 m-2 border border-rounded">
+        <div class="col-lg-3 col-md-5 border border-rounded service-card">
           <span class="icon">
             <i class="fa fa-newspaper-o" aria-hidden="true"></i>
           </span>
@@ -104,7 +110,7 @@
           <p class="describe">Creating websites that adapt and display correctly on various devices and screen sizes, ensuring a seamless user experience across desktops, tablets, and smartphones.
           </p>
         </div>
-        <div class="col-lg-3 col-md-5 m-2 border border-rounded">
+        <div class="col-lg-3 col-md-5 border border-rounded service-card">
           <span class="icon">
             <i class="fa fa-picture-o" aria-hidden="true"></i>
           </span>
@@ -112,7 +118,7 @@
           <p class="describe">Crafting intuitive and aesthetically pleasing user interfaces that effectively communicate brand identity and message, while prioritizing usability and accessibility.
           </p>
         </div>
-        <div class="col-lg-3 col-md-5 m-2 border border-rounded">
+        <div class="col-lg-3 col-md-5 border border-rounded service-card">
           <span class="icon">
             <i class="fa fa-mobile" aria-hidden="true"></i>
           </span>
@@ -126,73 +132,84 @@
   </section>
 
   <section id="portfolio">
-    <div class="portfolio-title text-center pt-4">
+    <div class="portfolio-title text-center pt-4 mb-4">
       <p>What I did?</p>
-      <h3>Portfolio</h3>
+      <h3 class="fw-bold">Portfolio</h3>
     </div>
-    <div class="container-sm">
+    <div class="container">
       <div class="row">
-        <div class="col-4 border border-rounded">
-          <h4 class="title">Web Designing</h4>
-          <p class="subtitle">Category: Web templates</p>
+        <div class="col-lg-5 col-md-8 border work1">
+          <a href="https://roadmap.sh/full-stack">
+            <h4 class="title">Web Designing</h4>
+            <p class="subtitle">Category: Web templates</p>
+          </a>
         </div>
-        <div class="col-4 col-sm-10 border border-rounded">
-          <h4 class="title">Machine Learning</h4>
-          <p class="subtitle">Category: Ai</p>
+        <div class="col-lg-5 col-md-8 border work2">
+          <a href="https://roadmap.sh/ai-data-scientist">
+            <h4 class="title">Artificial-Intelligence</h4>
+            <p class="subtitle">Category: Ai</p>
+          </a>
         </div>
-        <div class="col-4 border border-rounded">
-          <h4 class="title">Personal Tutor</h4>
-          <p class="subtitle">Category: Empowering</p>
+        <div class="col-lg-5 col-md-8 border work3">
+          <a href="#contact-me">
+            <h4 class="title">Personal Tutor</h4>
+            <p class="subtitle">Category: Empowering</p>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <section id="Hire-me">
-    <div class="container-fluid text-bg-secondary rounded-bottom mt-3 mb-5 pt-3">
+    <div class="container-fluid text-bg-secondary rounded-bottom pt-3">
       <div class="row text-center p-4">
         <div class="col-md-4 col-sm-6">
-          <h4 class="contact-me-title">want to work with me?</h4>
-          <p class="contact-me-subtitle">Always feel free to Contact & Hire me</p>
+          <h4 class="contact-me-title fw-bold">Want to work with me?</h4>
+          <p class="contact-me-subtitle">Feel free to Contact & Hire me</p>
         </div>
-        <div class="col-md-4 col-sm-6">
-          <button class="hire border-rounded rounded-2 border-0 px-5 py-2">Hire Me</button>
+        <div class="col-md-4 col-sm-6 pt-3">
+          <a href="contact-me">
+            <button class="hire border-rounded rounded-2 border-0 px-5 py-2">Hire Me</button>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <section id="testimonial">
-    <div class="intro text-center mb-4 pb-2">
+    <div class="intro text-center">
       <p class="title">What Clients Think about Me?</p>
-      <h4>Testimonial</h4>
+      <h4 class="fw-bold">Testimonial</h4>
     </div>
     <div class="container mb-5">
       <div class="row">
         <div class="col-lg-5 col-md-10 col-sm-10 border border-rounded rounded-3 m-2 p-4">
-          <p class="position-relative">
+          <p class="position-relative msg">
             Working with Adolphe was a breeze. Their attention to detail and dedication to crafting a seamless user experience truly impressed us. We couldn't be happier with the result!
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded">
-              <img src="mike.jpg" alt="" style="width: 75px;">
+            <span class="position-absolute top-20 start-100 translate-middle badge rounded">
+              <img src="mike.jpg" alt="" style="width: 75px;" class="rounded-4">
             </span>
+            <h4>Mike</h4>
           </p>
         </div>
         <div class="col-lg-5 col-md-10 col-sm-10 border border-rounded rounded-3 m-2 p-4">
-          <p class="position-relative">
+          <p class="position-relative msg">
             Exceptional talent and professionalism! Adolphe transformed our website into a modern, responsive masterpiece. Their communication and expertise made the entire process smooth and enjoyable. Highly recommended!
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded">
-              <img src="terry.jpg" alt="" style="width: 75px;">
+            <span class="position-absolute top-20 start-100 translate-middle badge rounded">
+              <img src="terry.jpg" alt="" style="width: 75px;" class="rounded-4">
             </span>
+            <h4>Terry</h4>
           </p>
         </div>
       </div>
     </div>
   </section>
-  <section class="contact-me text-center">
+
+  <section id="contact-me">
     <p class="title">How can you communicate?</p>
-    <h4 class="subtitle">Contact Me</h4>
-    <div class="container mt-3">
-      <div class="row">
+    <h4 class="subtitle">Via Email fill this form</h4>
+    <div class="container-sm mt-4">
+      <div class="row mx-4">
         <div class="mb-3 col-md-6 col-sm-6">
           <input type="text" class="form-control form-control-sm" placeholder="Your Name">
         </div>
@@ -203,17 +220,44 @@
           <textarea class="form-control form-control-lg" rows="4" cols="8"></textarea>
         </div>
         <div class="col-auto text-center">
-          <button type="submit" class="btn rounded mb-3 text-bg-secondary p-1  rounded-bottom">Send Message!</button>
+          <button type="submit" class="btn rounded mb-3 text-bg-secondary py-2 px-3 rounded-bottom">Send Message!</button>
         </div>
       </div>
     </div>
   </section>
 
-  <footer id="footer" class="text-center mt-2">
-    <span class="border border-top"></span>
-    <p>
-      Copyright <script>document.write(/\d{4}/.exec(Date())[0])</script> Ayirwanda Adolphe
-    </p>
+  <footer id="footer" class="text-center mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <a href="https://www.facebook.com/manasse.ndayishimiye.397">
+            <span>
+              <i class="fab fa-facebook-square p-2"></i>
+            </span>
+          </a>
+          <a href="https://www.instagram.com/ayi_adolphe/">
+            <span>
+              <i class="fab fa-instagram p-2"></i>
+            </span>
+          </a>
+          <a href="www.linkedin.com/in/adolphe-ayirwanda-718a9a225">
+            <span>
+              <i class="fab fa-linkedin p-2"></i>
+            </span>
+          </a>
+          <a href="https://github.com/DrSense">
+            <span>
+              <i class="fab fa-github p-2"></i>
+            </span>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 p-2">
+          <p>
+            Copyright <script>document.write(/\d{4}/.exec(Date())[0])</script> Ayirwanda Adolphe
+          </p>
+        </div>
+      </div>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

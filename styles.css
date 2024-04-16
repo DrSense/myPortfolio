@@ -1,5 +1,78 @@
 
 body{
-    margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.row {
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#about-me {
+    margin: 75px auto;
+    text-align: center;
+}
+
+.about-me-tag {
+    margin: 45px auto;
+}
+
+.service-card{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    max-height: 400px;
+}
+
+.fa {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.work1, .work2,.work3 {
+    color: skyblue;
+    text-align: center;
+    padding: 80px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.work1{
+    background-image: url(web-desig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.work2{
+    background-image: url(ai.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.work3{
+    background-image: url(tutor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Hire-me {
+    margin: 50px 0;
+}
+
+.msg {
+    padding-right: 40px;
+}
+
+#contact-me {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.fab {
+    font-size: 20px;
 }
