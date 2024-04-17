@@ -80,6 +80,10 @@ a{
     text-align: center;
 }
 
+.form-format {
+    max-width: 80%;
+}
+
 .fab {
     font-size: 20px;
 }
