@@ -1,22 +1,27 @@
-
 * {
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    transition: background 0.3s;
 }
 
 .row {
     justify-content: center;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.2s;
+}
+
+a:hover, a:focus {
+    color: #0d6efd;
 }
 
 #about-me {
@@ -28,47 +33,74 @@ a{
     margin: 45px auto;
 }
 
-.service-card{
+.service-card {
     text-align: center;
     padding: 20px;
     margin: 10px;
     max-height: 400px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-radius: 16px;
+    background: #fff;
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    transform: translateY(-8px) scale(1.03);
 }
 
 .fa {
     font-size: 50px;
     margin-bottom: 20px;
     margin-top: 15px;
+    transition: color 0.3s, transform 0.3s;
 }
 
-.work1, .work2,.work3 {
+.service-card:hover .fa {
+    color: #0d6efd;
+    transform: scale(1.2) rotate(-8deg);
+}
+
+.work1, .work2, .work3 {
     color: skyblue;
     text-align: center;
     padding: 80px;
     margin: 10px;
     border-radius: 10px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
 
-.work1{
+.work1 {
     background-image: url(web-desig.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.work2{
+.work2 {
     background-image: url(ai.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.work3{
+.work3 {
     background-image: url(tutor.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.work1:hover, .work2:hover, .work3:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    transform: scale(1.03) translateY(-6px);
+    filter: brightness(1.08);
 }
 
 #Hire-me {
     margin: 50px 0;
+    transition: background 0.3s;
+}
+
+#Hire-me:hover {
+    background: linear-gradient(90deg, #6c757d 60%, #0d6efd 100%);
 }
 
 .msg {
@@ -84,6 +116,42 @@ a{
     max-width: 90%;
 }
 
+input[type="text"], input[type="email"], textarea {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 2px rgba(13,110,253,0.15);
+}
+
+button, .btn {
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+button:hover, .btn:hover {
+    background: #0d6efd;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(13,110,253,0.12);
+    transform: translateY(-2px) scale(1.04);
+}
+
 .fab {
     font-size: 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.fab:hover {
+    color: #0d6efd;
+    transform: scale(1.3) rotate(-10deg);
+}
+
+/* Card hover for testimonials and portfolio */
+.card {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    transform: translateY(-6px) scale(1.02);
 }
